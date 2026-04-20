@@ -1,0 +1,95 @@
+ body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background: rgba(0,0,0,0.3);
+        }
+
+        .navbar h2 {
+            margin: 0;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Dropdown */
+        .dropdown {
+            display: none;
+            position: absolute;
+            background: white;
+            color: black;
+            top: 30px;
+            left: 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .dropdown a {
+            display: block;
+            color: black;
+            padding: 5px 10px;
+        }
+
+        .nav-links li:hover .dropdown {
+            display: block;
+        }
+
+        /* Hero section */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background: #ff9800;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+        }
+
+        .btn:hover {
+            background: #e68900;
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(0,0,0,0.4);
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }

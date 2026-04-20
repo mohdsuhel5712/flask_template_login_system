@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinterexa Private Limited</title>
+   <link rel="stylesheet" href="{{ url_for('static',filename='css/home.css') }}">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h2>Kinterexa Pvt Ltd</h2>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+
+            <li>
+                <a href="#">Services</a>
+                <div class="dropdown">
+                    <a href="#">Web Development</a>
+                    <a href="#">App Development</a>
+                    <a href="#">Digital Marketing</a>
+                    <a href="#">Cloud Solutions</a>
+                </div>
+            </li>
+
+            <li><a href="#">Contact</a></li>
+            <li><a href="{{ url_for('signup') }}">Signup</a></li>
+            <li><a href="{{ url_for('login') }}">Login</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to Kinterexa Private Limited</h1>
+        <p>We provide innovative tech solutions to grow your business.</p>
+
+        <a href="{{ url_for('signup') }}" class="btn">Get Started</a>
+        <a href="{{ url_for('login') }}" class="btn">Login</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Kinterexa Private Limited | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

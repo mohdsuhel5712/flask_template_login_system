@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Kinterexa</title>
+      <link rel="stylesheet" href="{{ url_for('static',filename='css/login.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Login to Kinterexa</h1>
+
+        <!-- Flask error message -->
+        {% if error %}
+            <div class="error">{{ error }}</div>
+        {% endif %}
+
+        <form action="{{ url_for('login') }}" method="POST">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <input type="password" name="password" placeholder="Enter your password" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <a href="{{ url_for('signup') }}" class="signup-link">
+            Don’t have an account? Sign up
+        </a>
+    </div>
+
+</body>
+</html>
